@@ -10,7 +10,7 @@ export default function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to={`About`}>About</Link>
+        <Link to={`/About`}>About</Link>
       </Typography>
       <Typography
         as="li"
@@ -18,7 +18,7 @@ export default function NavbarDefault() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link to={`Works`}>Work</Link>
+        <Link to={`/Works`}>Work</Link>
       </Typography>
     </ul>
   );

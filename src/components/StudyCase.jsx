@@ -9,7 +9,7 @@ function StudyCasePage({ studyCases }) {
   );
 
   if (!selectedStudyCase) {
-    return <div>Study Case not found.</div>;
+    return <div>404 pas d'étude de cas.</div>;
   }
 
   return (

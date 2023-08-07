@@ -1,10 +1,7 @@
-import NavbarDefault from "../components/navbar";
-
 export default function About() {
   return (
     <>
-      <NavbarDefault />
-      <h1 className="text-sm">
+      <h1 className="text-sm text-center">
         Websitic est une Agence de communication digitale à paris ayant pour
         mission de vous accompagner sur vos projets digitaux. De l’étape d’avant
         projet web au lancement effectif du site, nous sommes là pour vous. Tout

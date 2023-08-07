@@ -1,13 +1,14 @@
 import NavbarDefault from "../components/navbar";
 import { Outlet } from "react-router-dom";
-import Home from "./home";
+import "../index.css";
 
 export default function Root() {
   return (
     <>
-      <NavbarDefault />
-      <Home />
-      <div id="detail">
+      <div>
+        <NavbarDefault />
+      </div>
+      <div className="flex">
         <Outlet />
       </div>
     </>

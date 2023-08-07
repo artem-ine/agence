@@ -8,24 +8,31 @@ import About from "./routes/about.jsx";
 import Works from "./routes/works";
 import studyCases from "./studyCasesData";
 import StudyCase from "./components/StudyCase";
+import Home from "./routes/home";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
     errorElement: <ErrorPage />,
-  },
-  {
-    path: "/about",
-    element: <About />,
-  },
-  {
-    path: "/works/",
-    element: <Works studyCases={studyCases} />,
     children: [
       {
-        path: ":workId",
-        element: <StudyCase studyCases={studyCases} />,
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/about",
+        element: <About />,
+      },
+      {
+        path: "/works/",
+        element: <Works studyCases={studyCases} />,
+        children: [
+          {
+            path: ":workId",
+            element: <StudyCase studyCases={studyCases} />,
+          },
+        ],
       },
     ],
   },

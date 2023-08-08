@@ -9,6 +9,7 @@ import Works from "./routes/works";
 import studyCases from "./studyCasesData";
 import StudyCase from "./components/StudyCase";
 import Home from "./routes/home";
+import DarkModeSwitch from "./components/modeSwitch";
 
 const router = createBrowserRouter([
   {
@@ -38,8 +39,12 @@ const router = createBrowserRouter([
   },
 ]);
 
+const darkModePref = window.matchMedia("(prefers-color-scheme: dark)").matches;
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <RouterProvider router={router}>
+      <DarkModeSwitch defaultDarkMode={darkModePref} />
+    </RouterProvider>
   </React.StrictMode>
 );

@@ -8,7 +8,7 @@ export default function Root() {
       <div>
         <NavbarDefault />
       </div>
-      <div className="flex">
+      <div>
         <Outlet />
       </div>
     </>

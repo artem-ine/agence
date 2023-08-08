@@ -12,11 +12,12 @@ export default function Works() {
         </h1>
         <br />
         <div>
-          <h3>Etudes de cas</h3>
-          <ul>
+          <h3 className="text-center">Etudes de cas</h3>
+          <br />
+          <ul className="text-center">
             {studyCases.map((studyCase) => (
-              <li key={studyCase.id}>
-                <Link to={`/works/${studyCase.id}`}>{studyCase.title}</Link>
+              <li key={studyCase.title}>
+                <Link to={`/works/${studyCase.title}`}>{studyCase.title}</Link>
               </li>
             ))}
           </ul>

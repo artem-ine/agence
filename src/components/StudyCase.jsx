@@ -5,7 +5,7 @@ function StudyCasePage({ studyCases }) {
   const { workId } = useParams();
 
   const selectedStudyCase = studyCases.find(
-    (studyCase) => studyCase.id === parseInt(workId)
+    (studyCase) => studyCase.title === workId
   );
 
   if (!selectedStudyCase) {

@@ -5,8 +5,10 @@ import DarkModeSwitch from "./modeSwitch";
 export default function NavbarDefault() {
   const navList = (
     <>
-      <DarkModeSwitch />
       <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
+        <Typography as="li" variant="small" className="p-1 font-normal">
+          <DarkModeSwitch />
+        </Typography>
         <Typography as="li" variant="small" className="p-1 font-normal">
           <Link to={`/About`}>About</Link>
         </Typography>
